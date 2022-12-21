@@ -1,0 +1,7 @@
+.app {
+  max-width: 1600px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 20px;
+  height: 100vh;
+}
