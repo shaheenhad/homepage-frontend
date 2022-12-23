@@ -6,11 +6,13 @@ import Main from "../Main/Main";
 function App() {
   return (
     <div className="app">
-      <Switch>
-        <Route exact path="/">
-          <Main />
-        </Route>
-      </Switch>
+      <div className="app__content">
+        <Switch>
+          <Route exact path="/">
+            <Main />
+          </Route>
+        </Switch>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 const today = new Date();
-const time = today.getHours();
+const timeHours = today.getHours();
 
 function getGreeting(time) {
   if (5 <= time && time < 12) {
@@ -11,6 +11,6 @@ function getGreeting(time) {
   }
 }
 
-const greeting = getGreeting(time);
+const greeting = getGreeting(timeHours);
 
 export { greeting };

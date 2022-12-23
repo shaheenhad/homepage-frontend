@@ -4,7 +4,9 @@ import { greeting } from "../../utils/getGreeting";
 function Header() {
   return (
     <header className="header">
-      <h1 className="header__title">Good {greeting}</h1>
+      <h1 className="header__title">
+        Good <i>{greeting}</i>
+      </h1>
     </header>
   );
 }
