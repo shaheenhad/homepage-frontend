@@ -1,0 +1,21 @@
+.about {
+  min-height: 600px;
+  color: white;
+  padding-top: 75px;
+  display: flex;
+}
+.about__text {
+  padding: 100px 0 0;
+}
+
+.about__title {
+  margin: 0;
+}
+
+.about__image {
+  height: 464px;
+  width: 464px;
+  border-radius: 1000px;
+  object-fit: cover;
+  margin: 0 50px 0;
+}

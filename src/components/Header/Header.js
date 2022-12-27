@@ -1,5 +1,6 @@
 import React from "react";
 import { greeting } from "../../utils/getGreeting";
+import "./Header.css";
 
 function Header() {
   return (

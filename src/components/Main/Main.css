@@ -3,4 +3,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../../images/morning.jpg");
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
