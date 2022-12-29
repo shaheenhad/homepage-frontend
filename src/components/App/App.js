@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import Main from "../Main/Main";
+import Bookmarks from "../Bookmarks/Bookmarks";
 import About from "../About/About";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Main />
+            <Bookmarks />
             <About />
           </Route>
         </Switch>
