@@ -13,8 +13,8 @@
 }
 
 .about__image {
-  height: 464px;
-  width: 464px;
+  max-height: 464px;
+  max-width: 464px;
   border-radius: 1000px;
   object-fit: cover;
   margin: 0 50px 0;
