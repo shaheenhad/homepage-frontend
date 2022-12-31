@@ -4,6 +4,7 @@ import "./App.css";
 import Main from "../Main/Main";
 import Bookmarks from "../Bookmarks/Bookmarks";
 import About from "../About/About";
+import Footer from "../Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Main />
             <Bookmarks />
             <About />
+            <Footer />
           </Route>
         </Switch>
       </div>
