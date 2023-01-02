@@ -5,6 +5,8 @@ import Main from "../Main/Main";
 import Bookmarks from "../Bookmarks/Bookmarks";
 import About from "../About/About";
 import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
+import Quote from "../Quote/Quote";
 
 function App() {
   return (
@@ -15,6 +17,11 @@ function App() {
             <Main />
             <Bookmarks />
             <About />
+            <Footer />
+          </Route>
+          <Route path="/quote">
+            <Navbar />
+            <Quote />
             <Footer />
           </Route>
         </Switch>

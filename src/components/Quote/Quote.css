@@ -1,0 +1,46 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 82vh;
+  justify-content: space-between;
+}
+
+.quote__title {
+  font-size: 54px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.quote__container {
+  max-width: 60%;
+  line-height: 1.2;
+}
+
+.quote__text {
+  font-size: 36px;
+}
+
+.quote__author {
+  text-align: end;
+  font-size: 24px;
+}
+
+.quote__button {
+  border: none;
+  height: 64px;
+  background-color: #2f71e5;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 56px;
+  color: #fff;
+  width: 250px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.quote__button:hover {
+  background-color: #347eff;
+}
