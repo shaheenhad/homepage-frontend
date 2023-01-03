@@ -1,13 +1,22 @@
 import React from "react";
 import "./Quote.css";
-import { getQuote } from "../../utils/ForismaticAPI";
+import quoteApi from "../../utils/QuotableApi";
 
 function Quote() {
   const [quote, setQuote] = React.useState(
     "It would not be much of a universe if it wasn’t home to the people you love."
   );
-
   const [author, setAuthor] = React.useState("Stephen Hawking");
+
+  React.useEffect(() => {
+    quoteApi
+      .getQuote()
+      .then((res) => {
+        setAuthor(res.author);
+        setQuote(res.content);
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
   return (
     <div className="quote">
