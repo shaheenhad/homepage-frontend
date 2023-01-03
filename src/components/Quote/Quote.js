@@ -1,5 +1,6 @@
 import React from "react";
 import "./Quote.css";
+import { getQuote } from "../../utils/ForismaticAPI";
 
 function Quote() {
   const [quote, setQuote] = React.useState(

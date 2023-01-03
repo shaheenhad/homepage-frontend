@@ -12,6 +12,7 @@ function Navbar() {
         <NavLink
           activeClassName="navbar__link_active"
           className="navbar__link"
+          exact={true}
           to="/"
         >
           Home

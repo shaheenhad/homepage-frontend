@@ -1,9 +1,9 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #fff;
   margin: auto;
   padding: 25px 40px 0 40px;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .navbar__logo {
@@ -27,7 +27,8 @@
   padding-bottom: 25px;
   width: 92px;
   text-align: center;
+  font-weight: 700;
 }
 .navbar__link_active {
-  border-bottom: #fff solid 2px;
+  border-bottom: #fff solid 3px;
 }

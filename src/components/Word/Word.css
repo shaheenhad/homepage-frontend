@@ -1,4 +1,4 @@
-.quote {
+.word {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,30 +11,30 @@
   padding: 20px 0 20px;
 }
 
-.quote__title {
+.word__title {
   font-size: 54px;
   line-height: 1.2;
   text-align: center;
   margin: 0;
 }
 
-.quote__container {
+.word__container {
   max-width: 60%;
   line-height: 1.2;
 }
 
-.quote__text {
+.word__word {
   font-size: 36px;
 }
 
-.quote__author {
+.word__definition {
   text-align: end;
   font-size: 24px;
   margin: 0;
   padding-top: 50px;
 }
 
-.quote__button {
+.word__button {
   border: none;
   height: 64px;
   background-color: #2f71e5;
@@ -49,6 +49,6 @@
   transition: 0.2s ease-in-out;
 }
 
-.quote__button:hover {
+.word__button:hover {
   background-color: #347eff;
 }
