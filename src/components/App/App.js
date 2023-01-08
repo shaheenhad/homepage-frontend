@@ -8,7 +8,6 @@ import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import Quote from "../Quote/Quote";
 import Word from "../Word/Word";
-import quoteApi from "../../utils/QuotableApi";
 
 function App() {
   return (

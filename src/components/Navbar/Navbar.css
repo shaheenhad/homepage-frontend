@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
-  padding: 25px 40px 0 40px;
+  padding: 25px 2.5% 0;
   background-color: rgba(0, 0, 0, 0.15);
 }
 
@@ -12,6 +12,7 @@
   text-decoration: none;
   color: #fff;
   font-weight: 900;
+  padding-bottom: 25px;
 }
 .navbar__links {
   display: flex;
@@ -31,4 +32,39 @@
 }
 .navbar__link_active {
   border-bottom: #fff solid 3px;
+}
+
+.navbar__menu {
+  background: transparent;
+  border: none;
+  height: 28px;
+  width: 28px;
+  padding: 0;
+  display: none;
+}
+
+.navbar__menu:hover {
+  cursor: pointer;
+}
+
+.navbar__menu-icon {
+  height: 28px;
+  width: 28px;
+  padding: 0;
+}
+
+@media screen and (max-width: 740px) {
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar__logo {
+    font-size: 24px;
+  }
 }
