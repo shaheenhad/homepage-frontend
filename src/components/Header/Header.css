@@ -17,6 +17,14 @@
   gap: 10px;
 }
 
+.header__title_afternoon {
+  color: white;
+}
+
+.header__title_evening {
+  color: white;
+}
+
 @media screen and (max-width: 460px) {
   .header__title {
     flex-direction: column;

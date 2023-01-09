@@ -1,15 +1,15 @@
 .quote {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 82vh;
+  min-height: 82vh;
   justify-content: space-between;
   background-color: #4b72b480;
   max-width: 94%;
   border-radius: 50px;
   margin: 0 auto 20px;
   padding: 20px 0 20px;
-  overflow: hidden;
 }
 
 .quote__title {
@@ -32,7 +32,7 @@
   text-align: end;
   font-size: 24px;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .quote__button {
@@ -52,4 +52,14 @@
 
 .quote__button:hover {
   background-color: #347eff;
+}
+
+@media screen and (max-width: 400px) {
+  .quote__text {
+    font-size: 28px;
+  }
+
+  .quote__author {
+    padding: 20px 0 15px;
+  }
 }

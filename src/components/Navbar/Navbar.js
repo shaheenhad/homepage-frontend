@@ -6,12 +6,16 @@ import menu from "../../images/menu.svg";
 function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = React.useState(false);
 
+  function handleMenuClick() {
+    setIsNavExpanded(!isNavExpanded);
+  }
+
   return (
     <nav className="navbar">
       <NavLink className="navbar__logo" to="/">
         home.page
       </NavLink>
-      <button className="navbar__menu">
+      <button onClick={handleMenuClick} className="navbar__menu-button">
         <img
           className="navbar__menu-icon"
           src={menu}
@@ -34,14 +38,17 @@ function Navbar() {
         >
           QuoteOTD
         </NavLink>
-        <NavLink
-          activeClassName="navbar__link_active"
-          className="navbar__link"
-          to="/word"
-        >
-          WordOTD
-        </NavLink>
       </div>
+      <menu
+        className={`navbar__menu ${isNavExpanded ? `navbar__menu_active` : ``}`}
+      >
+        <NavLink className="navbar__menu-link" exact={true} to="/">
+          Home
+        </NavLink>
+        <NavLink className="navbar__menu-link" to="/quote">
+          QuoteOTD
+        </NavLink>
+      </menu>
     </nav>
   );
 }

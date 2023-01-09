@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Clock.css";
+import { greeting } from "../../utils/getGreeting";
 
 function Clock() {
   const [date, setDate] = useState(new Date());
@@ -15,8 +16,12 @@ function Clock() {
   }, []);
   return (
     <div className="clock">
-      <p className="clock__time">{date.toLocaleTimeString("en-US")}</p>
-      <p className="clock__date">{date.toLocaleDateString("en-US")}</p>
+      <p className={`clock__time clock_${greeting}`}>
+        {date.toLocaleTimeString("en-US")}
+      </p>
+      <p className={`clock__date clock_${greeting}`}>
+        {date.toLocaleDateString("en-US")}
+      </p>
     </div>
   );
 }

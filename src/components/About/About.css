@@ -3,10 +3,11 @@
   color: white;
   padding-top: 75px;
   display: flex;
+  line-height: 1.2;
 }
 
 .about__text {
-  padding: 100px 0 0;
+  padding: 5% 0 0;
 }
 
 .about__title {
@@ -15,8 +16,9 @@
 }
 
 .about__description {
-  padding-top: 15px;
+  padding-top: 20px;
   padding-right: 30px;
+  margin: 0;
 }
 
 .about__image {
@@ -27,7 +29,7 @@
   margin: 0 50px 0;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
   .about {
     flex-direction: column;
     padding: 1rem;

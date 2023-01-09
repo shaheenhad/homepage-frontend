@@ -2,7 +2,18 @@
   min-height: 576px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../../images/morning.jpg");
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+
+.main_morning {
+  background-image: url("../../images/morning.jpg");
+}
+
+.main_afternoon {
+  background-image: url("../../images/afternoon.jpg");
+}
+
+.main_evening {
+  background-image: url("../../images/night.jpg");
 }

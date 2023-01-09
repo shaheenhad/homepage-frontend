@@ -3,11 +3,11 @@ const timeHours = today.getHours();
 
 function getGreeting(time) {
   if (5 <= time && time < 12) {
-    return "morning";
+    return `morning`;
   } else if (12 < time && time < 18) {
-    return "afternoon";
+    return `afternoon`;
   } else {
-    return "evening";
+    return `evening`;
   }
 }
 
