@@ -7,7 +7,6 @@ import About from "../About/About";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import Quote from "../Quote/Quote";
-import Word from "../Word/Word";
 
 function App() {
   return (
@@ -23,11 +22,6 @@ function App() {
           <Route path="/quote">
             <Navbar />
             <Quote />
-            <Footer />
-          </Route>
-          <Route path="/word">
-            <Navbar />
-            <Word />
             <Footer />
           </Route>
         </Switch>
