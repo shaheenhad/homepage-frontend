@@ -19,8 +19,8 @@ function About() {
         </p>
         <p className="about__description">
           This is the final project I developed for the Practicum Software
-          Engineering bootcamp, which makes use of Create React App and
-          responsive web design via CSS.
+          Engineering bootcamp, which makes use of Create React App, responsive
+          web design via CSS, and Fetch API.
         </p>
       </div>
     </div>
