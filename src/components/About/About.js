@@ -4,7 +4,7 @@ import mePath from "../../images/about-me.jpg";
 
 function About() {
   return (
-    <div className="about">
+    <section className="about">
       <img
         alt="site author in nature"
         src={mePath}
@@ -23,7 +23,7 @@ function About() {
           web design via CSS, and Fetch API.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 

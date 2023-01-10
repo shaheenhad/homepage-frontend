@@ -9,33 +9,63 @@ import youtube from "../../images/youtube.png";
 
 function Bookmarks() {
   return (
-    <div className="bookmarks">
+    <section className="bookmarks">
       <h2 className="bookmarks__title">Go Somewhere</h2>
       <div className="bookmarks__links">
-        <a className="bookmarks__link" href="https://www.google.com/">
+        <a
+          className="bookmarks__link"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.google.com/"
+        >
           <img className="bookmarks__logo" alt="search logo" src={google}></img>
         </a>
-        <a className="bookmarks__link" href="https://www.spotify.com/">
+        <a
+          className="bookmarks__link"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://open.spotify.com/"
+        >
           <img
             className="bookmarks__logo"
             alt="spotify logo"
             src={spotify}
           ></img>
         </a>
-        <a className="bookmarks__link" href="https://www.reddit.com/">
+        <a
+          className="bookmarks__link"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.reddit.com/"
+        >
           <img className="bookmarks__logo" alt="reddit logo" src={reddit}></img>
         </a>
-        <a className="bookmarks__link" href="https://www.instagram.com/">
+        <a
+          className="bookmarks__link"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.instagram.com/"
+        >
           <img
             className="bookmarks__logo"
             alt="instagram logo"
             src={insta}
           ></img>
         </a>
-        <a className="bookmarks__link" href="https://www.amazon.com/">
+        <a
+          className="bookmarks__link"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.amazon.com/"
+        >
           <img className="bookmarks__logo" alt="amazon logo" src={amazon}></img>
         </a>
-        <a className="bookmarks__link" href="https://www.youtube.com/">
+        <a
+          className="bookmarks__link"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.youtube.com/"
+        >
           <img
             className="bookmarks__logo"
             alt="youtube logo"
@@ -43,7 +73,7 @@ function Bookmarks() {
           ></img>
         </a>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -16,10 +16,10 @@ function Clock() {
   }, []);
   return (
     <div className="clock">
-      <p className={`clock__time clock_${greeting}`}>
+      <p className={`clock__time clock_theme_${greeting}`}>
         {date.toLocaleTimeString("en-US")}
       </p>
-      <p className={`clock__date clock_${greeting}`}>
+      <p className={`clock__date clock_theme_${greeting}`}>
         {date.toLocaleDateString("en-US")}
       </p>
     </div>

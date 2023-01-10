@@ -6,7 +6,7 @@ import { greeting } from "../../utils/getGreeting";
 
 function Main() {
   return (
-    <main className={`main main_${greeting}`}>
+    <main className={`main main_theme_${greeting}`}>
       <Navbar />
       <Header />
     </main>

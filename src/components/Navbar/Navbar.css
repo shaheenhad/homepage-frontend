@@ -7,7 +7,7 @@
 }
 
 .navbar__logo {
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab", sans-serif;
   font-size: 30px;
   text-decoration: none;
   color: #fff;
@@ -55,6 +55,7 @@
 
 .navbar__menu {
   position: absolute;
+  z-index: 1;
   height: 100px;
   width: 100%;
   padding: 0;

@@ -6,7 +6,6 @@ import Preloader from "../Preloader/Preloader";
 function Quote() {
   const [quote, setQuote] = React.useState("Requested Resource Not Found");
   const [author, setAuthor] = React.useState("");
-
   const [isLoading, setIsLoading] = React.useState(false);
 
   React.useEffect(() => {
@@ -30,7 +29,7 @@ function Quote() {
   }
 
   return (
-    <div className="quote">
+    <section className="quote">
       <h2 className="quote__title">Get some insight</h2>
       {isLoading && <Preloader />}
       <div className="quote__container">
@@ -40,7 +39,7 @@ function Quote() {
       <button onClick={handleGetQuote} className="quote__button">
         Get a new quote
       </button>
-    </div>
+    </section>
   );
 }
 

@@ -5,6 +5,18 @@ import menu from "../../images/menu.svg";
 
 function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = React.useState(false);
+  const [width, setWidth] = React.useState(window.innerWidth);
+
+  React.useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+      if (width > 740) {
+        setIsNavExpanded(false);
+      }
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  });
 
   function handleMenuClick() {
     setIsNavExpanded(!isNavExpanded);
